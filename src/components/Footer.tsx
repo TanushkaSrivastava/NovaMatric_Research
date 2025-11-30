@@ -12,7 +12,7 @@ export const Footer = () => {
               <div className="w-8 h-8 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center">
                 <BarChart3 className="w-5 h-5 text-white" />
               </div>
-              <span className="font-display font-bold text-xl">NovaMetrics</span>
+              <span className="font-display font-bold text-xl">NovaMetric</span>
             </div>
             <p className="text-primary-foreground/80 text-sm mb-4">
               Empowering businesses with data-driven insights and strategic market intelligence.
@@ -55,22 +55,18 @@ export const Footer = () => {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start space-x-2">
                 <Mail className="w-4 h-4 mt-0.5 text-secondary" />
-                <span className="text-primary-foreground/80">info@novametrics.com</span>
-              </li>
-              <li className="flex items-start space-x-2">
-                <Phone className="w-4 h-4 mt-0.5 text-secondary" />
-                <span className="text-primary-foreground/80">+1 (555) 123-4567</span>
+                <span className="text-primary-foreground/80">info@novametricresearch.com</span>
               </li>
               <li className="flex items-start space-x-2">
                 <MapPin className="w-4 h-4 mt-0.5 text-secondary" />
-                <span className="text-primary-foreground/80">123 Analytics Ave, Suite 100<br />New York, NY 10001</span>
+                <span className="text-primary-foreground/80">P-34, Lucknow<br />Uttar Pradesh, India 226002</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-primary-foreground/10 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-primary-foreground/60">
-          <p>&copy; 2025 NovaMetrics. All rights reserved.</p>
+          <p>&copy; 2025 NovaMetric. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/privacy" className="hover:text-primary-foreground transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-primary-foreground transition-colors">Terms of Service</Link>

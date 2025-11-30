@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, MapPin, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
@@ -15,7 +15,6 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
     company: "",
     service: "",
     message: "",
@@ -25,9 +24,9 @@ const Contact = () => {
     e.preventDefault();
     toast({
       title: "Message Sent!",
-      description: "Thank you for contacting NovaMetrics. We'll get back to you within 24 hours.",
+      description: "Thank you for contacting NovaMetric. We'll get back to you within 24 hours.",
     });
-    setFormData({ name: "", email: "", phone: "", company: "", service: "", message: "" });
+    setFormData({ name: "", email: "", company: "", service: "", message: "" });
   };
 
   const handleChange = (field: string, value: string) => {
@@ -43,7 +42,7 @@ const Contact = () => {
         <div className="container mx-auto max-w-6xl text-center animate-fade-in">
           <h1 className="font-display font-bold text-5xl md:text-6xl mb-6">Get In Touch</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to transform your data into strategic decisions? Let's discuss how NovaMetrics can help you achieve your business objectives.
+            Ready to transform your data into strategic decisions? Let's discuss how NovaMetric can help you achieve your business objectives.
           </p>
         </div>
       </section>
@@ -62,23 +61,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-display font-semibold mb-1">Email Us</h3>
-                      <p className="text-muted-foreground text-sm">info@novametrics.com</p>
-                      <p className="text-muted-foreground text-sm">sales@novametrics.com</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="border-border/50">
-                <CardContent className="p-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-secondary/20 to-accent/20 flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-6 h-6 text-secondary" />
-                    </div>
-                    <div>
-                      <h3 className="font-display font-semibold mb-1">Call Us</h3>
-                      <p className="text-muted-foreground text-sm">+1 (555) 123-4567</p>
-                      <p className="text-muted-foreground text-sm">Mon-Fri, 9AM-6PM EST</p>
+                      <p className="text-muted-foreground text-sm">info@novametricresearch.com</p>
                     </div>
                   </div>
                 </CardContent>
@@ -92,9 +75,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-display font-semibold mb-1">Visit Us</h3>
-                      <p className="text-muted-foreground text-sm">123 Analytics Avenue</p>
-                      <p className="text-muted-foreground text-sm">Suite 100</p>
-                      <p className="text-muted-foreground text-sm">New York, NY 10001</p>
+                      <p className="text-muted-foreground text-sm">P-34, Lucknow</p>
+                      <p className="text-muted-foreground text-sm">Uttar Pradesh, India 226002</p>
                     </div>
                   </div>
                 </CardContent>
@@ -131,26 +113,14 @@ const Contact = () => {
                       </div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div className="space-y-2">
-                        <Label htmlFor="phone">Phone Number</Label>
-                        <Input 
-                          id="phone" 
-                          type="tel"
-                          value={formData.phone}
-                          onChange={(e) => handleChange("phone", e.target.value)}
-                          placeholder="+1 (555) 000-0000" 
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="company">Company Name</Label>
-                        <Input 
-                          id="company" 
-                          value={formData.company}
-                          onChange={(e) => handleChange("company", e.target.value)}
-                          placeholder="Your Company" 
-                        />
-                      </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="company">Company Name</Label>
+                      <Input 
+                        id="company" 
+                        value={formData.company}
+                        onChange={(e) => handleChange("company", e.target.value)}
+                        placeholder="Your Company" 
+                      />
                     </div>
 
                     <div className="space-y-2">
