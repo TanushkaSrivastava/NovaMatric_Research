@@ -112,21 +112,21 @@ const About = () => {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-5xl font-bold text-secondary mb-2">12+</div>
+              <div className="text-5xl font-bold text-secondary mb-2">3+</div>
               <p className="text-muted-foreground">Years of Excellence</p>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-secondary mb-2">500+</div>
+              <div className="text-5xl font-bold text-secondary mb-2">200+</div>
               <p className="text-muted-foreground">Projects Delivered</p>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-secondary mb-2">50+</div>
+              <div className="text-5xl font-bold text-secondary mb-2">180+</div>
               <p className="text-muted-foreground">Countries Covered</p>
             </div>
-            <div className="text-center">
+          {/*}  <div className="text-center">
               <div className="text-5xl font-bold text-secondary mb-2">98%</div>
               <p className="text-muted-foreground">Client Retention</p>
-            </div>
+            </div>*/}
           </div>
         </div>
       </section>
